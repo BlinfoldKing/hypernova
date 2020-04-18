@@ -87,6 +87,6 @@ nnoremap <F5> :call LanguageClient_contextMenu()<CR>
 
 map <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 nnoremap tt :NERDTreeToggle<CR>
-inoremap jj <Esc>
+inoremap ;; <Esc>
 nnoremap <silent><C-P> :Files <cr>
 

@@ -1,3 +1,5 @@
+"" startup config
+
 source ~/.config/nvim/plug.vim
 source  ~/.config/nvim/config.vim
 source  ~/.config/nvim/command.vim
@@ -17,3 +19,4 @@ let g:startify_custom_footer=[
             \'  visit me: https://blinfoldking.dev',
             \'  -------------------------------',
             \]
+

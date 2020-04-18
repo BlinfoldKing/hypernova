@@ -1,0 +1,15 @@
+name: hypernova
+version: "1.0"
+author: Blinfoldking <hi@blinfoldking.dev>
+about: 21st Century Neovim
+args:
+    - install:
+        short: i
+        long: install
+        help: install neovim, dependancies with hypernova config
+        takes_value: false
+    - verbose:
+        short: v
+        multiple: true
+        help: Sets the level of verbosity
+

@@ -22,6 +22,7 @@ let &t_ZR="\e[23m"
 set t_ZH=^[[3m
 set t_ZR=^[[23m
 syntax on
+
 colorscheme palenight
 
 "" beter whitespace
@@ -74,11 +75,27 @@ hi Normal guibg=NONE ctermbg=NONE
 highlight Comment cterm=italic gui=italic
 highlight Function cterm=italic gui=italic
 
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
+
 "" language server
 set hidden
 let g:LanguageClient_serverCommands = {
     \ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
-    \ 'go': ['gopls'],
+    \ 'javascript': ['flow', 'lsp'],
+    \ 'javascript.jsx': ['flow', 'lsp'],
+    \ 'python': ['~/.local/bin/pyls'],
+    \ 'python3': ['~/.local/bin/pyls'],
     \ }
 autocmd BufWritePre *.go,*.rs :call LanguageClient#textDocument_formatting_sync()
 
+
+au FileType perl set filetype=prolog
+
+let g:vista_default_executive = 'nvim_lsp'
+
+let g:javascript_plugin_flow = 1
+
+let g:reply_repls = {
+\   'prolog': ['swipl']
+\ }

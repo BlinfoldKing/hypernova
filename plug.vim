@@ -1,8 +1,15 @@
 call plug#begin('~/.vim/plugged')
+    Plug 'rhysd/reply.vim', { 'on': ['Repl', 'ReplAuto'] }
     Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
     \ 'do': 'bash install.sh',
     \ }
+    Plug 'fatih/vim-go'
+    Plug 'evanleck/vim-svelte'
+    Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+    Plug 'liuchengxu/vista.vim'
+    Plug 'mxw/vim-prolog'
+    Plug 'edkolev/tmuxline.vim'
     Plug 'drewtempelmeyer/palenight.vim'
     Plug 'Shougo/neosnippet'
     Plug 'Shougo/neosnippet-snippets'
@@ -17,7 +24,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'majutsushi/tagbar'
     Plug 'dense-analysis/ale'
     Plug 'pangloss/vim-javascript'
-    Plug 'mxw/vim-jsx'
     Plug 'jzelinskie/monokai-soda.vim'
     Plug 'dunckr/vim-monokai-soda'
     Plug 'mxw/vim-jsx'
